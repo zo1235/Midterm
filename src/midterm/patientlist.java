@@ -8,6 +8,10 @@ package midterm;
  *
  * @author Zoher
  */
-class PatientForm {
+class patientlist {
+
+    static void setText(String patientType) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }

@@ -4,10 +4,15 @@
  */
 package midterm;
 
+import javax.swing.JPanel;
+
 /**
  *
  * @author Zoher
  */
-class PatientForm {
+public class PatientForm_1 {
+
+    public PatientForm_1(JPanel bottomPanel) {
+    }
     
 }

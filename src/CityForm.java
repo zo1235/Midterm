@@ -1,8 +1,8 @@
-package midterm;
 
-import java.awt.CardLayout;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
+import midterm.User;
+
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -16,9 +16,9 @@ import javax.swing.JPanel;
 public class CityForm extends javax.swing.JPanel {
 
     /**
-     * Creates new form PatientForm_1
+     * Creates new form PatientForm
      */
-    User u;
+        User u;
     JPanel bottomPanel;
     ImageIcon icon;
     public CityForm(User inputuser,JPanel bottomPanel,ImageIcon icon) {
@@ -32,12 +32,11 @@ public class CityForm extends javax.swing.JPanel {
     public CityForm() {
         initComponents();
     }
-
-    private void initComponents() {
+ private void populateDetails() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-    private void populateDetails() {
+    private void initComponents() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     class Patient {
@@ -150,29 +149,13 @@ public class CityForm extends javax.swing.JPanel {
 
     private void torontoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_torontoActionPerformed
         // TODO add your handling code here:
-        PatientForm_1 pf = new PatientForm_1(bottomPanel);
-        CardLayout layout = (CardLayout) bottomPanel.getLayout();
-        layout.next(bottomPanel);
     }//GEN-LAST:event_torontoActionPerformed
 
     private void bramptonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bramptonActionPerformed
         // TODO add your handling code here:
-        PatientForm_1 pf = new PatientForm_1(bottomPanel);
-        CardLayout layout = (CardLayout) bottomPanel.getLayout();
-        layout.next(bottomPanel);
-        
     }//GEN-LAST:event_bramptonActionPerformed
-    
-    private void populateDetails() {
-        
-        namefield.setText(u.getName());
-        agefield.setText(u.getAge());
-        gendergroup.setText(u.getGender());
-        patientlist.setText(u.getPatientType());
-        encountarea.setText(u.getEncounter());
-        picturebutton.setIcon(icon);
     }
-    }
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton brampton;
     private javax.swing.JLabel jLabel1;
@@ -181,4 +164,4 @@ public class CityForm extends javax.swing.JPanel {
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JButton toronto;
     // End of variables declaration//GEN-END:variables
-    }
+}
